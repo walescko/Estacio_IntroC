@@ -9,6 +9,7 @@ int main(void){
     number01 = 12.5;
 
     printf("\nFloat number is %f", number01);
+    printf("\nFloat Number is %.2f", number01);
 
     return 0;
 }
