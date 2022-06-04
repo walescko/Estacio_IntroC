@@ -15,7 +15,7 @@ int main(void){
 
     printf("As letras digitadas foram %c e %c", char01, char02);
 
-    printf("\nEnd");
+    printf("\nEnd\n");
 
     return 0;
 }
