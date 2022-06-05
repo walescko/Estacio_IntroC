@@ -11,6 +11,8 @@ Eles recomendam o uso do Dev C++ para escrever os códigos, mas como aluno de um
 de ensino consegui pegar o pacode de IDEs da JetBrains (www.jetbrains.com) sem custo, para os 
 meus estudos.
 
+Módulo 01
 Tema 1: Solução de Problemas e Pensamento Computaciona
 Tema 2: Tipo de Dados, Expressões e Tabelas Verdades
 Tema 3: Comandos de Entrada e Saída
+Tema 4: Tomada de Decisão
