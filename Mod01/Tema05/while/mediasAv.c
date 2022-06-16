@@ -9,22 +9,22 @@ int main(void){
 
     printf("\nMedia dos alunos de uma turma");
 
-    while (i > 5){
-        printf("Entre com as notas do %dº aluno: ", i+1);
-        printf("\nNota 1: ");
+    while (i < 5){
+        printf("\nEntre com as notas do %dº aluno:\n", i+1);
+        printf("Nota 1: ");
         scanf("%lf", &nota01);
-        printf("\nNota 2: ");
+        printf("Nota 2: ");
         scanf("%lf", &nota02);
-        printf("\nNota 3: ");
+        printf("Nota 3: ");
         scanf("%lf", &nota03);
 
         media = (nota01+nota02+nota03)/3;
 
-        printf("\nA media do %d aluno é %.2lf\n", i+1, media);
+        printf("\nA media do %dº aluno é %.2lf\n", i+1, media);
         if(media >=7){
-            printf("E o aluno está aprovado!");
+            printf("E o aluno está aprovado!\n");
         } else {
-            printf("E o aluno está em exame!");
+            printf("E o aluno está em exame!\n");
         }
         i++;
         nota01=0;
@@ -32,6 +32,6 @@ int main(void){
         nota03=0;
     }
 
-    printf("\nEnd\n")
+    printf("\nEnd\n");
     return 0;
 }
