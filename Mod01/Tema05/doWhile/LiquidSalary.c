@@ -13,29 +13,29 @@ int main(void){
     double sumSalaryLiquid = 0, sumSalaryBrute =0, sumTax =0;
     int i = 0; //controle
 
-    printf("\nSalario Bruto, Salario Liquido, Taxas e impostos");
+    printf("\nSalario Bruto, Salario Liquido, Taxas e impostos\n");
     do{
-        printf("\nEntre com o salário bruto do %dº funcionário", i+1);
+        printf("\nEntre com o salário bruto do %dº funcionário R$ ", i+1);
         scanf("%lf", &salaryBrute);
 
         if (salaryBrute <= 999.00){ //10%
             saleSalary = 0.1*salaryBrute;
             salaryLiquid = salaryBrute - saleSalary;
-        } if (salaryBrute >= 999.01 && salaryBrute <=1999.00) { //15%
+        } if (salaryBrute >= 999.01 && salaryBrute <= 1999.00) { //15%
             saleSalary = 0.15*salaryBrute;
             salaryLiquid = salaryBrute - saleSalary;
-        } if (salaryBrute >=1999.01 && salaryBrute <= 9999.00){ //20%
+        } if (salaryBrute >= 1999.01 && salaryBrute <= 9999.00){ //20%
             saleSalary = 0.20*salaryBrute;
             salaryLiquid = salaryBrute - saleSalary;
-        } if (salaryBrute>= 9999.01 && salaryBrute <= 99999.00){//25%
+        } if (salaryBrute >= 9999.01 && salaryBrute <= 99999.00){//25%
             saleSalary = 0.25*salaryBrute;
             salaryLiquid = salaryBrute - saleSalary;
-        } else {//30%
+        } if (salaryBrute >= 99999.01){//30%
             saleSalary = 0.30*salaryBrute;
             salaryLiquid = salaryBrute - saleSalary;
         }
 
-        printf("\nO salário liquido do %dº funcionario é R$ %.2lf", i+1, salaryLiquid);
+        printf("\nO salário liquido do %dº funcionario é R$ %.2lf\n", i+1, salaryLiquid);
         sumSalaryBrute += salaryBrute;
         sumSalaryLiquid += salaryLiquid;
         sumTax += saleSalary;
