@@ -9,12 +9,18 @@ int main(void){
     int numbers[100];
 
     printf("\nNumeros aletórios: ");
-    for(int i = 0; i<100;i++){
-        numbers[i] = rand()%200;
+    for(int i=0; i<100; i++){
+        numbers[i] = i+1;
     }
 
+    printf("\nVetor em ordem crescente:\n");
     for(int i = 0; i<100;i++){
-       printf("\n%dº Número %d", i+1, numbers[i]);
+       printf("%d ", numbers[i]);
+    }
+
+    printf("\nVetor em ordem decrescente:\n");
+    for(int i = 99; i>=0;i--){
+        printf("%d ", numbers[i]);
     }
 
     printf("\nEnd\n");
