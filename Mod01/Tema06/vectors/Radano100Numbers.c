@@ -10,7 +10,7 @@ int main(void){
 
     printf("\nNumeros aletórios: ");
     for(int i=0; i<100; i++){
-        numbers[i] = i+1;
+        numbers[i] = rand()%500; //i+1;
     }
 
     printf("\nVetor em ordem crescente:\n");
