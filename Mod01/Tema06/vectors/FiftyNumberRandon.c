@@ -18,20 +18,14 @@ int main(void){
 
     int numbers01[50], numbers02[50];
 
+    printf("i  V1 V2\n");
     for(int i=0; i<50; i++){
         numbers01[i]= rand()%500;
-    }
-
-    for(int i=0; i<50; i++){
-        if(numbers01[i]%2 == 0){
+          if(numbers01[i]%2 == 0){
             numbers02[i] = numbers01[i]+1;
         } else {
             numbers02[i] = numbers01[i]-1;
         }
-    }
-
-    printf("\ni  V1  V2\n");
-    for(int i=0; i<50; i++){
         printf("%d %d %d\n", i+1, numbers01[i], numbers02[i]);
     }
 
