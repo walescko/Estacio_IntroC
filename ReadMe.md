@@ -17,3 +17,4 @@ Tema 2: Tipo de Dados, Expressões e Tabelas Verdades
 Tema 3: Comandos de Entrada e Saída
 Tema 4: Tomada de Decisão
 Tema 5: Loops (Laços de repetição)
+Tema 5: Arrays (Vetores e Matrizes) - Se bem que um vetor é uma matriz unidimensional.
