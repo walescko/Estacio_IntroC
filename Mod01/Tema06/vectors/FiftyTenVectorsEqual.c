@@ -10,23 +10,20 @@
 int main(void){
 
     int array50[50], array10[10];
+    int limitsRandon = 100;
 
     printf("\nVetor 50\n");
     for(int i = 0; i<50; i++){
-        array50[i]= rand()%100;
+        array50[i]= rand()%limitsRandon;
         printf("%d ", array50[i]);
-    }
-    printf("\nVetor 10\n");
-    for(int i = 0; i<10; i++){
-        array10[i]= rand()%100;
-        printf("%d ", array10[i]);
     }
 
     printf("\n");
     for(int i=0; i<10;i++){
+        int scanNumber = rand()%limitsRandon;
         for(int j=0;j<50; j++){
-            if(array10[i]==array50[j]){
-                printf("Na posição %d do vetor10 temos o número %d e no vetor50 o mesmo numero na posição %d\n", i+1, array10[i], j+1);
+            if(scanNumber==array50[j]){
+                printf("O número %d está na posição %d\n", scanNumber, j+1);
             }
         }
     }
