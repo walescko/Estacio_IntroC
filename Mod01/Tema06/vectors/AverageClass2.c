@@ -11,7 +11,7 @@
 
 int main(void){
 
-    int maxAssessment = 10, students = 50;
+    int maxAssessment = 11, students = 50;
     double assessment01[students], assessment02[students], assessment03[students], averegeStudent[students];
     double sumAssessment01 = 0, sumAssessment02 = 0, sumAssessment03 =0;
     double averegeAssessment01, averegeAssessment02, averegeAssessment03, averegeClass;
