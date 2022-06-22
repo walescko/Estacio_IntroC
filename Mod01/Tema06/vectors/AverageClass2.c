@@ -11,13 +11,13 @@
 
 int main(void){
 
-
-    double assessment01[50], assessment02[50], assessment03[50], averegeStudent[50];
+    int maxAssessment = 10, students = 50;
+    double assessment01[students], assessment02[students], assessment03[students], averegeStudent[students];
     double sumAssessment01 = 0, sumAssessment02 = 0, sumAssessment03 =0;
     double averegeAssessment01, averegeAssessment02, averegeAssessment03, averegeClass;
-    int maxAssessment = 10;
 
-    for(int i = 0; i<50;i++) {
+
+    for(int i = 0; i<students;i++) {
         assessment01[i] = rand() % maxAssessment;
         assessment02[i] = rand() % maxAssessment;
         assessment03[i] = rand() % maxAssessment;
@@ -30,12 +30,22 @@ int main(void){
     }
 
 //aluno nota1 nota2 nota3 media
-    printf("i N1 N2 N3 Media\n");
-    for(int i = 0; i<50;i++){
+    printf("i P1 P2 P3 Media\n");
+    for(int i = 0; i<students;i++){
         printf("%d %.2lf %.2lf %.2lf %.2lf\n", i+1, assessment01[i], assessment02[i], assessment03[i], averegeStudent[i]);
     }
 
-    
+    averegeAssessment01 = sumAssessment01/students;
+    averegeAssessment02 = sumAssessment02/students;
+    averegeAssessment03 = sumAssessment03/students;
+    averegeClass = (sumAssessment01 + sumAssessment02 + sumAssessment03)/(3*students);
+    printf("\nDados da turma:");
+    printf("\nMédia da turma %.2lf", averegeClass);
+    printf("\nMédia P1: %.2lf", averegeAssessment01);
+    printf("\nMédia P2: %.2lf", averegeAssessment02);
+    printf("\nMédia P3: %.2lf\n", averegeAssessment03);
+
+
 
 
 
