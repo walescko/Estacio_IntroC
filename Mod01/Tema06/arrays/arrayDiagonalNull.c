@@ -11,21 +11,17 @@ int main(void) {
     int array44[n][m];
 
     for (int i = 0; i<n; i++) {
+        printf("\n");
         for (int j = 0; j < m; j++) {
             if(i==j){
             array44[i][j] = 0;
             } else {
                 array44[i][j] = rand()%10;
             }
+            printf("%d ", array44[i][j]);
         }
     }
 
-    for(int i = 0; i < n; i++){
-        printf("\n");
-        for(int j = 0; j < m; j++){
-            printf("%d %d %d %d", array44[i][j]);
-        }
-    }
     printf("\n");
     return 0;
 }
