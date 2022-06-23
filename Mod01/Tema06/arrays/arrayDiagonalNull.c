@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 //
 // Created by walescko on 22/06/22.
 //
@@ -9,6 +10,7 @@ int main(void) {
 
     int n = 4, m = 4;
     int array44[n][m];
+    srand((unsigned)time(NULL));
 
     for (int i = 0; i<n; i++) {
         printf("\n");
@@ -21,7 +23,6 @@ int main(void) {
             printf("%d ", array44[i][j]);
         }
     }
-
     printf("\n");
     return 0;
 }
